@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ClientDataCollectionViewController: UIViewController {
     
@@ -18,16 +19,26 @@ class ClientDataCollectionViewController: UIViewController {
     
     var kioskZipCode = ""
     var userJsonToSubmit = [String: String]()
+    var dbUserData: Any!
+    let ref = Database.database().reference(withPath: "KioskSignIns")
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         userJsonToSubmit["kiosk_zip_code"] = kioskZipCode
+
+        ref.observe(.value, with: { snapshot in
+            self.dbUserData = snapshot.value
+        })
+
     }
     
     @IBAction func submit() {
+        let userRef = ref.child(UUID().uuidString)
+        userRef.setValue(userJsonToSubmit)
         
-        //submit the userJsonToSubmit to Firebase! 🎉
+        print("👽ayyyyyyyyylmao👽")
+        print("total users: \((dbUserData! as AnyObject).count! + 1)")
+        
         let alert = UIAlertController(title: "Success", message: "🎉", preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .default) { _ in
             self.tableHandler.reset()
@@ -35,6 +46,8 @@ class ClientDataCollectionViewController: UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+
+        tableHandler.reset()
     }
 }
 
