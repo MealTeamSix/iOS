@@ -26,8 +26,15 @@ class ClientDataCollectionViewController: UIViewController {
     }
     
     @IBAction func submit() {
+        
         //submit the userJsonToSubmit to Firebase! 🎉
-        tableHandler.reset()
+        let alert = UIAlertController(title: "Success", message: "🎉", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.tableHandler.reset()
+        }
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
 
