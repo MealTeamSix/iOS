@@ -51,8 +51,6 @@ class ClientDataCollectionViewController: UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-
-        tableHandler.reset()
     }
     
     @IBAction func exit() {
