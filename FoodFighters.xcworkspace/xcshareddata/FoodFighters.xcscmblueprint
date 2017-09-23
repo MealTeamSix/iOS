@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ABBDC4A458298DF9585B43D74E70CD2695FBAC0E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7D08FB18451FB8121DE5A2EAF545FFF4A9E71FD4" : 9223372036854775807,
+    "ABBDC4A458298DF9585B43D74E70CD2695FBAC0E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "06EE9913-DEB1-4F93-869A-1CFE63F08E5F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7D08FB18451FB8121DE5A2EAF545FFF4A9E71FD4" : "",
+    "ABBDC4A458298DF9585B43D74E70CD2695FBAC0E" : "iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FoodFighters",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoodFighters.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:MealTeamSix\/iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D08FB18451FB8121DE5A2EAF545FFF4A9E71FD4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:MealTeamSix\/iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABBDC4A458298DF9585B43D74E70CD2695FBAC0E"
+    }
+  ]
+}

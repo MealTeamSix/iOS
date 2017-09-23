@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77D6A7231F76C7D3004B1102 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D6A7221F76C7D3004B1102 /* GoogleService-Info.plist */; };
 		8C32B1261F73F818006E9BD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32B1251F73F818006E9BD4 /* AppDelegate.swift */; };
 		8C32B12B1F73F818006E9BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C32B1291F73F818006E9BD4 /* Main.storyboard */; };
 		8C32B12D1F73F818006E9BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C32B12C1F73F818006E9BD4 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77D6A7221F76C7D3004B1102 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C32B1221F73F818006E9BD4 /* FoodFighters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFighters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C32B1251F73F818006E9BD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C32B12A1F73F818006E9BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				8C32B1291F73F818006E9BD4 /* Main.storyboard */,
 				8C32B12C1F73F818006E9BD4 /* Assets.xcassets */,
 				8C32B1311F73F818006E9BD4 /* Info.plist */,
+				77D6A7221F76C7D3004B1102 /* GoogleService-Info.plist */,
 			);
 			path = FoodFighters;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C32B12D1F73F818006E9BD4 /* Assets.xcassets in Resources */,
+				77D6A7231F76C7D3004B1102 /* GoogleService-Info.plist in Resources */,
 				8C32B12B1F73F818006E9BD4 /* Main.storyboard in Resources */,
 				8CDC106F1F76C4C600F9E6B5 /* ClientDataCollectionTableViewCell.xib in Resources */,
 			);
