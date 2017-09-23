@@ -9,7 +9,7 @@
 enum ClientDataCollectionPartial: String {
     case email
     case phone
-    case zipcode
+    case zipCode
 }
 
 protocol ClientDataCollectionPartialUpdatedDelegate: class {

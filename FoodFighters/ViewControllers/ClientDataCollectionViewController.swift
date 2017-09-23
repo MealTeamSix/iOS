@@ -16,11 +16,17 @@ class ClientDataCollectionViewController: UIViewController {
         }
     }
     
+    var kioskZipCode = ""
     var userJsonToSubmit = [String: String]()
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        userJsonToSubmit["kiosk_zip_code"] = kioskZipCode
+    }
     
     @IBAction func submit() {
         //submit the userJsonToSubmit to Firebase! 🎉
-        print("👽ayyyyyyyyylmao👽")
     }
 }
 

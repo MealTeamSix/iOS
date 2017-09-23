@@ -25,7 +25,7 @@ class ClientDataCollectionTableHandler: NSObject {
     }
     
     weak var delegate: ClientDataCollectionPartialUpdatedDelegate!
-    var dataSource: [ClientDataCollectionPartial] = [.email, .phone, .zipcode]
+    var dataSource: [ClientDataCollectionPartial] = [.email, .phone, .zipCode]
 }
 
 extension ClientDataCollectionTableHandler: UITableViewDataSource {

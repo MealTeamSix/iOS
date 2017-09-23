@@ -12,6 +12,7 @@
 		8C32B12B1F73F818006E9BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C32B1291F73F818006E9BD4 /* Main.storyboard */; };
 		8C32B12D1F73F818006E9BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C32B12C1F73F818006E9BD4 /* Assets.xcassets */; };
 		8C32B13A1F73F8D3006E9BD4 /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C32B1391F73F8D3006E9BD4 /* APISession.swift */; };
+		8CB91D841F76D3720009585A /* KioskSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB91D831F76D3720009585A /* KioskSetupViewController.swift */; };
 		8CDC105C1F7697C600F9E6B5 /* APIResponseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC105B1F7697C600F9E6B5 /* APIResponseLogger.swift */; };
 		8CDC105E1F76B5A600F9E6B5 /* ClientDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC105D1F76B5A600F9E6B5 /* ClientDataCollectionViewController.swift */; };
 		8CDC10611F76B5F400F9E6B5 /* ClientDataCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC10601F76B5F400F9E6B5 /* ClientDataCollectionViewHandler.swift */; };
@@ -30,6 +31,7 @@
 		8C32B12C1F73F818006E9BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C32B1311F73F818006E9BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C32B1391F73F8D3006E9BD4 /* APISession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APISession.swift; path = Classes/APISession.swift; sourceTree = "<group>"; };
+		8CB91D831F76D3720009585A /* KioskSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KioskSetupViewController.swift; path = ViewControllers/KioskSetupViewController.swift; sourceTree = "<group>"; };
 		8CDC105B1F7697C600F9E6B5 /* APIResponseLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIResponseLogger.swift; path = Classes/APIResponseLogger.swift; sourceTree = "<group>"; };
 		8CDC105D1F76B5A600F9E6B5 /* ClientDataCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientDataCollectionViewController.swift; path = ViewControllers/ClientDataCollectionViewController.swift; sourceTree = "<group>"; };
 		8CDC10601F76B5F400F9E6B5 /* ClientDataCollectionViewHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientDataCollectionViewHandler.swift; path = Handlers/ClientDataCollectionViewHandler.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8CDC105D1F76B5A600F9E6B5 /* ClientDataCollectionViewController.swift */,
+				8CB91D831F76D3720009585A /* KioskSetupViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				8C32B1261F73F818006E9BD4 /* AppDelegate.swift in Sources */,
 				8CDC105E1F76B5A600F9E6B5 /* ClientDataCollectionViewController.swift in Sources */,
 				8CDC10631F76B94600F9E6B5 /* ClientDataCollectionTableHandler.swift in Sources */,
+				8CB91D841F76D3720009585A /* KioskSetupViewController.swift in Sources */,
 				8CDC10611F76B5F400F9E6B5 /* ClientDataCollectionViewHandler.swift in Sources */,
 				8C32B13A1F73F8D3006E9BD4 /* APISession.swift in Sources */,
 				8CDC105C1F7697C600F9E6B5 /* APIResponseLogger.swift in Sources */,
