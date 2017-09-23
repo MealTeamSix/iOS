@@ -15,6 +15,10 @@ class ClientDataCollectionTableHandler: NSObject {
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
+            
+            tableView.rowHeight = UITableViewAutomaticDimension
+            tableView.estimatedRowHeight = 117
+            
             let nib = UINib(nibName: cellIdentifier, bundle: Bundle.main)
             tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         }
@@ -35,6 +39,8 @@ extension ClientDataCollectionTableHandler: UITableViewDataSource {
         let partial = dataSource[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ClientDataCollectionTableViewCell
         cell.configure(withPartial: partial)
+        cell.delegate = self
+        
         return cell
     }
 }
