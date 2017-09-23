@@ -19,39 +19,39 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9On-Uc-vZv">
-                        <rect key="frame" x="12" y="12" width="351" height="66.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="12" y="12" width="351" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-ho-ero">
-                        <rect key="frame" x="12" y="86.5" width="351" height="30"/>
+                        <rect key="frame" x="12" y="66.5" width="351" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="IhH-Lf-qEY"/>
+                            <constraint firstAttribute="height" constant="50" id="IhH-Lf-qEY"/>
                         </constraints>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                     </textField>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1W-OI-MU8">
-                        <rect key="frame" x="14" y="90.5" width="347" height="24"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1W-OI-MU8">
+                        <rect key="frame" x="12" y="70.5" width="351" height="46"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                     </textView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="5IN-ho-ero" secondAttribute="bottom" constant="12" id="5WH-G2-WtY"/>
                     <constraint firstItem="5IN-ho-ero" firstAttribute="top" secondItem="9On-Uc-vZv" secondAttribute="bottom" constant="8" id="B36-Zi-IYm"/>
                     <constraint firstItem="p1W-OI-MU8" firstAttribute="top" secondItem="5IN-ho-ero" secondAttribute="top" constant="4" id="B61-Sv-tUe"/>
-                    <constraint firstItem="p1W-OI-MU8" firstAttribute="trailing" secondItem="5IN-ho-ero" secondAttribute="trailing" constant="-2" id="EQ4-ME-a9A"/>
+                    <constraint firstItem="p1W-OI-MU8" firstAttribute="trailing" secondItem="5IN-ho-ero" secondAttribute="trailing" id="EQ4-ME-a9A"/>
                     <constraint firstAttribute="trailing" secondItem="9On-Uc-vZv" secondAttribute="trailing" constant="12" id="It7-IM-IMc"/>
                     <constraint firstItem="5IN-ho-ero" firstAttribute="leading" secondItem="cNe-76-JVc" secondAttribute="leading" constant="12" id="c60-Ah-ZMi"/>
                     <constraint firstAttribute="trailing" secondItem="5IN-ho-ero" secondAttribute="trailing" constant="12" id="cPs-cP-R7d"/>
                     <constraint firstItem="9On-Uc-vZv" firstAttribute="top" secondItem="cNe-76-JVc" secondAttribute="top" constant="12" id="cin-dK-ujO"/>
-                    <constraint firstItem="p1W-OI-MU8" firstAttribute="leading" secondItem="5IN-ho-ero" secondAttribute="leading" constant="2" id="egU-hG-dff"/>
+                    <constraint firstItem="p1W-OI-MU8" firstAttribute="leading" secondItem="5IN-ho-ero" secondAttribute="leading" id="egU-hG-dff"/>
                     <constraint firstItem="9On-Uc-vZv" firstAttribute="leading" secondItem="cNe-76-JVc" secondAttribute="leading" constant="12" id="oOS-dA-faL"/>
-                    <constraint firstItem="p1W-OI-MU8" firstAttribute="bottom" secondItem="5IN-ho-ero" secondAttribute="bottom" constant="-2" id="ydT-PG-n3E"/>
+                    <constraint firstItem="p1W-OI-MU8" firstAttribute="bottom" secondItem="5IN-ho-ero" secondAttribute="bottom" id="ydT-PG-n3E"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

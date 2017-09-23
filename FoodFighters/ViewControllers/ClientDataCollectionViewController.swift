@@ -16,6 +16,8 @@ class ClientDataCollectionViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var constraintToAdjust: NSLayoutConstraint!
+    
     var kioskZipCode = ""
     var userJsonToSubmit = [String: String]()
     
@@ -23,6 +25,9 @@ class ClientDataCollectionViewController: UIViewController {
         
         super.viewDidLoad()
         userJsonToSubmit["kiosk_zip_code"] = kioskZipCode
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     @IBAction func submit() {
@@ -35,6 +40,36 @@ class ClientDataCollectionViewController: UIViewController {
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func exit() {
+        navigationController!.popViewController(animated: true)
+    }
+    
+    func keyboardWillShow(_ notification: Notification) {
+        
+        let userInfo = notification.userInfo!
+        let keyboardRectValue = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
+        let keyboardRect = keyboardRectValue.cgRectValue
+        let adjustedKeyboardRect = view.convert(keyboardRect, from: nil)
+        
+        constraintToAdjust.constant = view.frame.height - adjustedKeyboardRect.origin.y
+        
+        let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        UIView.animate(withDuration: animationDuration, animations: {
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        
+        constraintToAdjust.constant = 0
+        let userInfo = notification.userInfo!
+        let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        
+        UIView.animate(withDuration: animationDuration, animations: {
+            self.view.layoutIfNeeded()
+        })
     }
 }
 

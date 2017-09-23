@@ -34,6 +34,18 @@ class ClientDataCollectionTableHandler: NSObject {
     }
 }
 
+extension ClientDataCollectionTableHandler: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let nibs = Bundle.main.loadNibNamed("ClientDataCollectionTableHeaderView", owner: nil, options: nil)
+        return nibs!.first as! ClientDataCollectionTableHeaderView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 70
+    }
+}
+
 extension ClientDataCollectionTableHandler: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
