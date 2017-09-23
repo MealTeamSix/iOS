@@ -7,9 +7,22 @@
 //
 
 enum ClientDataCollectionPartial: String {
+    
     case email
     case phone
-    case zipCode
+    case userZipCode = "user_zip_code"
+    
+    var displayText: String {
+        
+        switch self {
+        case .email:
+            return "Email"
+        case .phone:
+            return "Phone Number"
+        case .userZipCode:
+            return "ZIP Code"
+        }
+    }
 }
 
 protocol ClientDataCollectionPartialUpdatedDelegate: class {

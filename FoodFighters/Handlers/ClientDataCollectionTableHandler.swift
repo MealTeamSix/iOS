@@ -19,13 +19,19 @@ class ClientDataCollectionTableHandler: NSObject {
             tableView.rowHeight = UITableViewAutomaticDimension
             tableView.estimatedRowHeight = 117
             
+            tableView.contentInset.top = 135
+            
             let nib = UINib(nibName: cellIdentifier, bundle: Bundle.main)
             tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         }
     }
     
     weak var delegate: ClientDataCollectionPartialUpdatedDelegate!
-    var dataSource: [ClientDataCollectionPartial] = [.email, .phone, .zipCode]
+    var dataSource: [ClientDataCollectionPartial] = [.email, .phone, .userZipCode]
+    
+    func reset() {
+        tableView.reloadData()
+    }
 }
 
 extension ClientDataCollectionTableHandler: UITableViewDataSource {

@@ -27,6 +27,7 @@ class ClientDataCollectionViewController: UIViewController {
     
     @IBAction func submit() {
         //submit the userJsonToSubmit to Firebase! 🎉
+        tableHandler.reset()
     }
 }
 

@@ -11,9 +11,9 @@ import UIKit
 class ClientDataCollectionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var dataPartialLabel: UILabel!
-    @IBOutlet weak var textField: UITextField! {
+    @IBOutlet weak var textView: UITextView! {
         didSet {
-            textField.delegate = self
+            textView.delegate = self
         }
     }
     
@@ -22,13 +22,24 @@ class ClientDataCollectionTableViewCell: UITableViewCell {
     
     func configure(withPartial partial: ClientDataCollectionPartial) {
         clientDataCollectionPartial = partial
-        dataPartialLabel.text = partial.rawValue
+        dataPartialLabel.text = partial.displayText
+        textView.text = ""
     }
 }
 
-extension ClientDataCollectionTableViewCell: UITextFieldDelegate {
+extension ClientDataCollectionTableViewCell: UITextViewDelegate {
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        delegate.didUpdate(clientDataCollectionPartial, withText: textField.text ?? "")
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        if text == "\n" {
+            textView.resignFirstResponder()
+            return false
+        }
+        
+        return true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        delegate.didUpdate(clientDataCollectionPartial, withText: textView.text ?? "")
     }
 }
